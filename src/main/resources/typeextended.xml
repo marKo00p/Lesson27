@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <package name="HomeWork"/>
+    <type name = "Configuration" access_modifier="public">
+        <field name = "a" type="long" access_modifier="private" access_modifier2="static" inintial_value="10"/>
+        <field name = "b" type="long" access_modifier="private" access_modifier2="static"  inintial_value="20"/>
+
+
+        <method name ="main" access_modifier="public" type="static" return_type="void">
+            <params>
+                <param name="args" type="String" isArray="T"/>
+            </params>
+            <body>
+                <statement>
+                    <systemprint arg="title" inintial_value="The area of rectangle is: "/>
+                    <expression a_value="a" b_value="b" multiplication_expression="*"/>
+                </statement>
+            </body>
+        </method>
+    </type>
+</xml>

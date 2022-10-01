@@ -1,0 +1,11 @@
+.idea/
+byteCodeExamples/
+classLoaderExample/
+org/
+test/
+xml/
+target/
+src/**/*.xml
+src/**/*.xsd
+!pom.xml
+!typeextended.xml

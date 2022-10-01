@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<!DOCTYPE configuration SYSTEM "./configuration.xsd">-->
+<configuration>
+    <title>
+        <font>Times Roman</font>
+        <size unit="pt">10</size>
+    </title>
+    <body>
+        <font>Arial</font>
+        <size unit="px">14</size>
+    </body>
+</configuration>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="configuration" type="Configuration"/>
+
+    <xs:complexType name="Configuration">
+        <xs:sequence>
+            <xs:element name="title" type="Font"/>
+            <xs:element name="body" type="Font"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Font">
+        <xs:sequence>
+            <xs:element name="font" type="xs:string"/>
+            <xs:element name="size" type="Size"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Size">
+        <xs:simpleContent>
+            <xs:extension base="FontSize">
+                <xs:attribute name="unit" type="Unit" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="Unit">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="pt"/>
+            <xs:enumeration value="px"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="FontSize">
+        <xs:restriction base="xs:integer">
+            <xs:enumeration value="10"/>
+            <xs:enumeration value="12"/>
+            <xs:enumeration value="14"/>
+            <xs:enumeration value="18"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+<!--    <xs:simpleType name="FontSize">-->
+<!--        <xs:restriction base="xs:integer">-->
+<!--            <xs:minInclusive value="2"/>-->
+<!--            <xs:maxExclusive value="14"/>-->
+<!--        </xs:restriction>-->
+<!--    </xs:simpleType>-->
+</xs:schema>

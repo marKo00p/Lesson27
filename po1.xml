@@ -1,0 +1,29 @@
+<purchaseOrder>
+  <shipTo country="string">
+    <name>string</name>
+    <street>string</street>
+    <city>string</city>
+    <state>string</state>
+    <zip>string</zip>
+  </shipTo>
+  <billTo country="string">
+    <name>string</name>
+    <street>string</street>
+    <city>string</city>
+    <state>string</state>
+    <zip>string</zip>
+  </billTo>
+  <comment>string</comment>
+  <items>
+    <!--Zero or more repetitions:-->
+    <item partNum="string">
+      <productName>Baby Monitor</productName>
+      <quantity>string</quantity>
+      <USPrice>148.95</USPrice>
+      <!--Optional:-->
+      <comment>string</comment>
+      <!--Optional:-->
+      <shipDate>string</shipDate>
+    </item>
+  </items>
+</purchaseOrder>
